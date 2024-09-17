@@ -1,0 +1,144 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: #fdf4f4;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px); /* For modern browsers */
+    -webkit-backdrop-filter: blur(10px); /* For Safari 9+ support */
+    padding: 100px 20px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #ff4d4d;
+    text-shadow: 1px 1px 2px #fff;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: #ff9999;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff4d4d;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: #ff9999;
+}
+
+/* Our Story */
+section {
+    padding: 50px 20px;
+}
+
+#our-story h2, #gallery h2, #messages h2, #future-dreams h2 {
+    color: #ff4d4d;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.story-timeline p {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 20px 0;
+}
+
+/* Gallery Section */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 300px); /* 2 rows, each 300px high */
+    gap: 20px; /* Space between items */
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery img,
+.gallery video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the area of the grid cell */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Love Notes Section */
+.notes p {
+    font-style: bold;
+    color: #ff6666;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* Future Dreams Section */
+ul {
+    list-style: none;
+}
+
+ul li {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #ff9999;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Floating Hearts Animation */
+.floating-hearts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://i.imgur.com/GQ9zbcu.png'); /* Example heart image URL */
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.8;
+    animation: floatHearts 20s infinite ease-in-out;
+}
+
+@keyframes floatHearts {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-50px) rotate(45deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
